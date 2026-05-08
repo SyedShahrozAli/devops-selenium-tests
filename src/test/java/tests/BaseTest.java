@@ -1,0 +1,28 @@
+package tests;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+public class BaseTest {
+
+    protected WebDriver driver;
+
+    public void setup() {
+
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--headless=new");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+
+        driver = new ChromeDriver(options);
+    }
+
+    public void tearDown() {
+
+        if (driver != null) {
+            driver.quit();
+        }
+    }
+}
