@@ -27,7 +27,7 @@ public class LoginTest extends BaseTest {
         driver.get("http://ec2-35-174-13-164.compute-1.amazonaws.com:3000/");
 
         Assert.assertTrue(
-            driver.findElement(By.tagName("body")).isDisplayed()
+            driver.findElement(By.tagName("form")).isDisplayed()
         );
     }
 
