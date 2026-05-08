@@ -6,7 +6,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/devops-selenium-tests.git'
+                git 'https://github.com/SyedShahrozAli/devops-selenium-tests.git'
             }
         }
 
