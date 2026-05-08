@@ -2,7 +2,7 @@
 
 <suite name="SeleniumSuite">
 
-    <test name="Tests">
+    <test name="LoginTests">
 
         <classes>
             <class name="tests.LoginTest"/>
