@@ -4,11 +4,6 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/SyedShahrozAli/devops-selenium-tests.git'
-            }
-        }
 
         stage('Run Selenium Tests') {
 
